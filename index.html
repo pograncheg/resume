@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2303/2303856.png">
+    <title>Pogran</title>
+</head>
+<body>
+    <header class="header" id="home">
+        <nav class="nav">
+            <a href="" class="logo"><img src="./img/icons/logo.png" alt="logo"></a>
+            <label for="burger-menu" class="burger-menu__button">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <ul class="nav-list">
+                <span class="nav-list__close-item"><i class="fa-solid fa-xmark"></i></span>
+                <li class="nav-list__item">
+                    <a href="#home">Main</a>                   
+                </li>
+                <li class="nav-list__item">
+                    <a href="#about">About</a>                
+                </li>
+                <li class="nav-list__item">
+                    <a href="#skills">Skills</a>                    
+                </li>
+                <li class="nav-list__item">
+                    <a href="#education">Education</a>                    
+                </li>
+                <li class="nav-list__item">
+                    <a href="#work-experience">Work Experience</a>                    
+                </li>
+                <li class="nav-list__item">
+                    <a href="#contact">Contact</a>                    
+                </li>
+            </ul>
+        </nav>
+        <section class="header__content">
+            <div class="wrapper">
+                <div class="slider">                      
+                    <div class="slider__items">
+                        <a class="slider__prev" onclick="minusSlide()">&#10094;</a>
+                        <img src="./img/person_1.jpg" alt="person_1" class="slider__item">
+                        <img src="./img/person_2.jpg" alt="person_2" class="slider__item">
+                        <img src="./img/person_3.jpg" alt="person_3" class="slider__item">
+                        <img src="./img/person_4.jpg" alt="person_4" class="slider__item">
+                        <a class="slider__next" onclick="plusSlide()">&#10095;</a>
+                    </div>
+                    <div class="slider-dots">
+                        <span class="slider-dots__item" onclick="currentSlide(1)"></span>
+                        <span class="slider-dots__item" onclick="currentSlide(2)"></span>
+                        <span class="slider-dots__item" onclick="currentSlide(3)"></span>
+                        <span class="slider-dots__item" onclick="currentSlide(4)"></span>
+                    </div>
+                </div>
+                <h2 class="header__title">Aliaksandr Pahranouski</h2>
+                <p class="header__text">Junior JavaScript Developer</p>   
+            </div>
+        </section>
+    </header>
+    <main>
+        <section id="about" class="about">
+            <div class="about__container">
+                <div>
+                    <img src="./img/my-foto.png" alt="my-foto" class="about__img">
+                </div>
+                <article class="about__content">
+                    <h2 class="section-title">About Me</h2>
+                    <!-- <p class="line"></p> -->
+                    <div>
+                        <!-- <p>
+                            I’m beginner Frontend Developer. Successfully completed courses in “Website development with HTML, CSS and JavaScript” and “Web application development with JavaScript” at Educational Center for Programming and High Tech IT-Academy. Currently learning the React framework and TypeScript.
+                        </p> -->
+                        <p>
+                            I easily connect with new people, have a good sense of humour, listening and communication skills. I can control myself and always friendly. I am willing to take on difficult tasks and learn something new to complete them. Successfully completed task is pleasure for me. I’m married and have a son. I like to meet my friends and play football in my free time.
+                        </p>
+                        <!-- <p>
+                            I’m married and have a son. I like to meet my friends and play football in my free time.                    
+                        </p> -->
+                    </div>
+                    <div class="about__basic basic">
+                        <ul class="basic__title">
+                            <li>
+                                Name:
+                            </li>
+                            <li>
+                                Age:
+                            </li>
+                            <li>
+                                Address:
+                            </li>
+                            <li>
+                                Phone number:
+                            </li>
+                        </ul>
+                        <ul class="basic__info">
+                            <li>
+                                Aliaksandr Pahranouski
+                            </li>
+                            <li>
+                                33
+                            </li>
+                            <li>
+                                Brest, Belarus
+                            </li>
+                            <li>
+                                +375 (29) 5202294
+                            </li>
+                        </ul>
+                        <!-- <p><strong>Name:</strong>Aliaksandr Pahranouski</p>
+                        <p><strong>Age:</strong>33</p>
+                        <p><strong>Address:</strong>Brest, Belarus</p>
+                        <p><strong>Address:</strong>Brest, Belarus</p> -->
+                    </div>
+                    <button type="button" class="about__download-button">
+                        <a href="./files/CV_Aliaksandr Pahranouski.docx" download>DOWNLOAD CV</a>
+                    </button>
+                </article>
+            </div>
+            
+        </section>
+        <section id="skills">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills__container">
+                
+                <ul class="skills-list">
+                    <li class="skills-list__item">HTML</li>
+                    <li class="skills-list__item">CSS</li>
+                    <li class="skills-list__item">JavaScript</li>
+                    <li class="skills-list__item">SQL queries</li>
+                    <li class="skills-list__item">Jira</li>
+                    <li class="skills-list__item">English(A2)</li>
+                </ul>
+            </div>
+        </section>
+        <section id="education">
+            <h2 class="section-title">Education</h2>
+            <div class="education__container">
+                <div class="education__item">
+                    <h3>2008 - 2013</h3>
+                    <p>Brest State Technical University</p>
+                    <p class="light-font">Automated Data Processing Systems</p>
+                </div>
+                <div class="education__item">
+                    <h3>February 2022 – May 2022</h3>
+                    <p>IT-Academy</p>
+                    <p class="light-font">WEBSITE DEVELOPMENT WITH HTML, CSS & JAVASCRIPT </p>
+                </div>
+                <div class="education__item">
+                    <h3>June 2022 – September 2022</h3>
+                    <p>IT-Academy</p>
+                    <p class="light-font">WEB APPLICATION DEVELOPMENT WITH JAVASCRIPT</p>
+                </div>
+            </div>
+
+        </section>
+        <section id="work-experience">
+            <h2 class="section-title">Work Experience</h2>
+            <div class="work-experience__container">
+                <div class="work-experience__item">
+                    <h3>July 2013 - September 2016</h3>
+                    <p>Brest Bureau of Passportization of the Population</p>
+                    <p class="light-font">Engineer</p>
+                </div>
+                <div class="work-experience__item">
+                    <h3>September 2016 - Present</h3>
+                    <p>Brest Regional Legal Information Center</p>
+                    <p class="light-font">Software specialist</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="contact" class="footer">
+        <div class="footer__item footer-nav">
+            <h3 class="footer-nav__title">Navigation</h3>
+            <ul class="footer-nav__list">
+                <li class="footer-nav__item">
+                    <a href="#home">Main</a>                  
+                </li>
+                <li class="footer-nav__item">
+                    <a href="#about">About</a>            
+                </li>
+                <li class="footer-nav__item">
+                    <a href="#skills">Skills</a>                  
+                </li>
+                <li class="footer-nav__item">
+                    <a href="#education">Education</a>             
+                </li>
+                <li class="footer-nav__item">
+                    <a href="#work-experience">Work Experience</a>                 
+                </li>
+                <li class="footer-nav__item">
+                    <a href="#contact">Contact</a>                    
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer__item">
+            <h3>Contact me</h3>
+            <ul class="contact">
+                <li class="contact__item">
+                    <i class="fa-solid fa-phone"></i>
+                    <a href="tel:+375295202294">+375 (29) 5202294</a>
+                </li>
+                <li class="contact__item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="mailto:pograncheg@gmail.com">pograncheg@gmail.com</a>
+                </li>
+                <li class="contact__item">
+                    <i class="fa-brands fa-skype"></i>
+                    <a href="skype:pograncheg">pograncheg</a>
+                </li>
+            </ul>
+            <ul class="social">
+                <li class="social__item">
+                    <a href="https://t.me/alex_pogran" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+                </li>
+                <li class="social__item">
+                    <a href="https://www.linkedin.com/in/aliaksandr-pahranouski-475775252/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </li>
+                <li class="social__item">
+                    <a href="https://github.com/pograncheg" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </li>
+            </ul>
+    
+        </div>
+        
+        <div class="copyright">
+            <p>© 2023 All rights reserved | Made by Pogran</p>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/3670c931d0.js" crossorigin="anonymous"></script>
+    <script src="./script/slider.js"></script>
+    <script src="./script/burger.js"></script>
+</body>
+</html>
